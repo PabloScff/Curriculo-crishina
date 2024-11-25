@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Tabela</title>
+  <link rel="stylesheet" href="css/administrador.css"> <!-- Link para o CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Consulta de Tabela</h1>
+
+    <!-- Campo de Busca -->
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Digite para buscar..." 
+      onkeyup="filtrarTabela()"
+    />
+
+    <!-- Tabela -->
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Senha</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Pablo</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Murilo</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Lucas</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>
